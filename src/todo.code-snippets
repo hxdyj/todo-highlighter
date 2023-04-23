@@ -1,18 +1,18 @@
 {
   "Add Javascript With Name": {
-		"scope": "javascript,typescript,tsx,jsx",
+		"scope": "javascript, typescript, javascriptreact, typescriptreact, vue, csharp, cpp, php",
 		"prefix": "todo",
 		"body": ["//TODO($1): $2"],
 		"description": "todo"
 	},
 	"Add Html Todo With Name": {
-		"scope": "html",
+		"scope": "html,markdown",
 		"prefix": "todo",
 		"body": ["<!-- TODO($1): $2 -->"],
 		"description": "todo"
 	},
 	"Add Style Todo With Name": {
-		"scope": "css,scss,less",
+		"scope": "css, scss, sass, less, stylus",
 		"prefix": "todo",
 		"body": ["/* TODO($1): $2 */"],
 		"description": "todo"
