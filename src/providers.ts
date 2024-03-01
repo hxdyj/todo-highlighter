@@ -99,10 +99,10 @@ class Todo extends TreeItem {
     this.description = !!children;
     this.command = !children
       ? {
-          command: COMMANDS.OPEN_FILE,
-          title: "Open file",
-          arguments: [path, col],
-        }
+        command: COMMANDS.OPEN_FILE,
+        title: "Open file",
+        arguments: [path, col],
+      }
       : undefined;
   }
 }

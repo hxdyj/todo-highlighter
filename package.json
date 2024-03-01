@@ -2,7 +2,7 @@
   "name": "bbl-todo-highlighter",
   "displayName": "BBL Todo Highlighter",
   "description": "Highlights TODO keyword and lists all todos in the side bar. fork of https://github.com/zerefdev/todo-highlighter/blob/main/README.md",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "engines": {
     "vscode": "^1.52.0"
   },
@@ -138,6 +138,9 @@
     "snippets": [
       {
         "path": "src/todo.code-snippets"
+      },
+      {
+        "path": "src/doc.code-snippets"
       }
     ],
     "viewsContainers": {
