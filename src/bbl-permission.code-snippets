@@ -1,0 +1,13 @@
+{
+  "Add paggy permission": {
+		"scope": "javascript, typescript, javascriptreact, typescriptreact",
+		"prefix": "permission",
+		"body": [
+			"{",
+				"permissionParse('$1') ?",
+				"<>$2</> : ",
+				"<>$3</>",
+			"}"
+		],
+	},
+}
