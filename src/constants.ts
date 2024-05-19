@@ -30,6 +30,7 @@ export const INCLUDE = [
   "**/*.py",
   "**/*.php",
   "**/*.md",
+  "**/*.rs",
 ];
 
 export const EXCLUDE = [

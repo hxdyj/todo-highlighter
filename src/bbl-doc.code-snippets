@@ -1,6 +1,6 @@
 {
   "Add doc annotation": {
-		"scope": "javascript, typescript, javascriptreact, typescriptreact, vue",
+		"scope": "javascript, typescript, javascriptreact, typescriptreact, vue, rust",
 		"prefix": "annod",
 		"body": [
       "/**",
@@ -8,14 +8,14 @@
       " *  */"],
 	},
   "Add doc annotation single": {
-		"scope": "javascript, typescript, javascriptreact, typescriptreact, vue",
+		"scope": "javascript, typescript, javascriptreact, typescriptreact, vue, rust",
 		"prefix": "annods",
 		"body": [
       "/** $1 **/"
     ]
 	},
   "Add multiple line annotation": {
-		"scope": "javascript, typescript, javascriptreact, typescriptreact, vue",
+		"scope": "javascript, typescript, javascriptreact, typescriptreact, vue, rust",
 		"prefix": "annom",
 		"body": [
       "/*",
@@ -24,14 +24,14 @@
     ],
 	},
   "Add multiple line annotation single": {
-		"scope": "javascript, typescript, javascriptreact, typescriptreact, vue",
+		"scope": "javascript, typescript, javascriptreact, typescriptreact, vue, rust",
 		"prefix": "annoms",
 		"body": [
       "/* $1 */",
     ],
 	},
   "Add single line annotation": {
-		"scope": "javascript, typescript, javascriptreact, typescriptreact, vue",
+		"scope": "javascript, typescript, javascriptreact, typescriptreact, vue, rust",
 		"prefix": "annos",
 		"body": ["// $1"],
 	},
