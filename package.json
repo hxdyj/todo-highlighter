@@ -1,201 +1,201 @@
 {
-  "name": "bbl-todo-highlighter",
-  "displayName": "BBL Todo Highlighter",
-  "description": "Highlights TODO keyword and lists all todos in the side bar. fork of https://github.com/zerefdev/todo-highlighter/blob/main/README.md",
-  "version": "1.0.6",
-  "engines": {
-    "vscode": "^1.52.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "keywords": [
-    "todo",
-    "highlight",
-    "todo snippet",
-    "todo highlight",
-    "todo highlighter"
-  ],
-  "license": "MIT",
-  "publisher": "hxdyj",
-  "icon": "src/media/icon.png",
-  "homepage": "https://github.com/hxdyj/todo-highlighter/README.md",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hxdyj/todo-highlighter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/hxdyj/todo-highlighter/issues",
-    "email": ""
-  },
-  "activationEvents": [
-    "*"
-  ],
-  "main": "./out/extension.js",
-  "contributes": {
-    "configuration": {
-      "title": "BBL Todo Highlighter",
-      "properties": {
-        "todoHighlighter.keyword": {
-          "type": "string",
-          "default": "TODO",
-          "description": "Controls todo keyword, defaults is `TODO`."
-        },
-        "todoHighlighter.keywordsRegex": {
-          "type": "string",
-          "default": "(TODO|todo)",
-          "description": "Controls todo pattern, defaults is `(TODO|todo)`."
-        },
-        "todoHighlighter.textColor": {
-          "type": "string",
-          "default": "#f1f1f1",
-          "description": "Controls the text color."
-        },
-        "todoHighlighter.stylingColor": {
-          "type": "string",
-          "default": "#e5aa25",
-          "description": "Controls the styling color."
-        },
-        "todoHighlighter.stylingType": {
-          "type": "string",
-          "default": "background",
-          "enum": [
-            "background",
-            "border",
-            "textonly"
-          ],
-          "description": "Controls the highlight styling."
-        },
-        "todoHighlighter.stylingBorderRadius": {
-          "type": "string",
-          "default": "4px 16px",
-          "description": "Controls the border radius."
-        },
-        "todoHighlighter.rulerLane": {
-          "type": "string",
-          "default": "Center",
-          "enum": [
-            "Left",
-            "Right",
-            "Center",
-            "Full"
-          ],
-          "description": "The position in the overview ruler where the decoration should be rendered."
-        },
-        "todoHighlighter.enableRulerColor": {
-          "type": "boolean",
-          "default": true,
-          "description": "Whether to enable decoration in the overview ruler."
-        },
-        "todoHighlighter.include": {
-          "type": "array",
-          "default": [
-            "**/*.js",
-            "**/*.ts",
-            "**/*.jsx",
-            "**/*.tsx",
-            "**/*.html",
-            "**/*.vue",
-            "**/*.css",
-            "**/*.scss",
-            "**/*.sass",
-            "**/*.less",
-            "**/*.styl",
-            "**/*.py",
-            "**/*.php",
-            "**/*.md"
-          ],
-          "description": "Files/Folders to include."
-        },
-        "todoHighlighter.exclude": {
-          "type": "array",
-          "default": [
-            "**/node_modules/**",
-            "**/bower_components/**",
-            "**/dist/**",
-            "**/out/**",
-            "**/build/**",
-            "**/.*/**"
-          ],
-          "description": "Files/Folders to exclude."
-        }
-      }
-    },
-    "commands": [
-      {
-        "command": "todoHighlighter.refreshList",
-        "category": "BBL Todo Highlighter",
-        "title": "Refresh Todo List",
-        "icon": "$(refresh)"
-      },
-      {
-        "command": "todoHighlighter.openFile",
-        "category": "BBL Todo Highlighter",
-        "title": "Open File",
-        "icon": "$(file)"
-      }
-    ],
-    "snippets": [
-      {
-        "path": "src/todo.code-snippets"
-      },
-      {
-        "path": "src/bbl-doc.code-snippets"
-      },
-      {
-        "path": "src/bbl-permission.code-snippets"
-      }
-    ],
-    "viewsContainers": {
-      "activitybar": [
-        {
-          "id": "todoHighlighter",
-          "title": "BBL Todo Highlighter",
-          "icon": "src/media/icon.svg"
-        }
-      ]
-    },
-    "views": {
-      "todoHighlighter": [
-        {
-          "id": "todo-list",
-          "name": "Todo List"
-        }
-      ]
-    },
-    "menus": {
-      "view/title": [
-        {
-          "command": "todoHighlighter.refreshList",
-          "when": "view == todo-list",
-          "group": "navigation"
-        }
-      ]
-    },
-    "viewsWelcome": [
-      {
-        "view": "todo-list",
-        "contents": "You have no todos yet."
-      }
-    ]
-  },
-  "scripts": {
-    "vscode:prepublish": "npm run compile",
-    "precompile": "rm -rf out",
-    "compile": "tsc -p ./",
-    "watch": "tsc -watch -p ./",
-    "pretest": "npm run compile && npm run lint",
-    "lint": "eslint src --ext ts"
-  },
-  "devDependencies": {
-    "@types/glob": "^7.1.3",
-    "@types/node": "^14.14.34",
-    "@types/vscode": "^1.52.0",
-    "@typescript-eslint/eslint-plugin": "^4.17.0",
-    "@typescript-eslint/parser": "^4.17.0",
-    "eslint": "^7.22.0",
-    "glob": "^7.1.6",
-    "typescript": "^4.2.3",
-    "vscode-test": "^1.5.1"
-  }
+	"name": "bbl-todo-highlighter",
+	"displayName": "BBL Todo Highlighter",
+	"description": "Highlights TODO keyword and lists all todos in the side bar. fork of https://github.com/zerefdev/todo-highlighter/blob/main/README.md",
+	"version": "1.0.7",
+	"engines": {
+		"vscode": "^1.52.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"keywords": [
+		"todo",
+		"highlight",
+		"todo snippet",
+		"todo highlight",
+		"todo highlighter"
+	],
+	"license": "MIT",
+	"publisher": "hxdyj",
+	"icon": "src/media/icon.png",
+	"homepage": "https://github.com/hxdyj/todo-highlighter/README.md",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hxdyj/todo-highlighter.git"
+	},
+	"bugs": {
+		"url": "https://github.com/hxdyj/todo-highlighter/issues",
+		"email": "951540966@qq.com"
+	},
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"configuration": {
+			"title": "BBL Todo Highlighter",
+			"properties": {
+				"todoHighlighter.keyword": {
+					"type": "string",
+					"default": "TODO",
+					"description": "Controls todo keyword, defaults is `TODO`."
+				},
+				"todoHighlighter.keywordsRegex": {
+					"type": "string",
+					"default": "(TODO|todo)",
+					"description": "Controls todo pattern, defaults is `(TODO|todo)`."
+				},
+				"todoHighlighter.textColor": {
+					"type": "string",
+					"default": "#f1f1f1",
+					"description": "Controls the text color."
+				},
+				"todoHighlighter.stylingColor": {
+					"type": "string",
+					"default": "#e5aa25",
+					"description": "Controls the styling color."
+				},
+				"todoHighlighter.stylingType": {
+					"type": "string",
+					"default": "background",
+					"enum": [
+						"background",
+						"border",
+						"textonly"
+					],
+					"description": "Controls the highlight styling."
+				},
+				"todoHighlighter.stylingBorderRadius": {
+					"type": "string",
+					"default": "4px 16px",
+					"description": "Controls the border radius."
+				},
+				"todoHighlighter.rulerLane": {
+					"type": "string",
+					"default": "Center",
+					"enum": [
+						"Left",
+						"Right",
+						"Center",
+						"Full"
+					],
+					"description": "The position in the overview ruler where the decoration should be rendered."
+				},
+				"todoHighlighter.enableRulerColor": {
+					"type": "boolean",
+					"default": true,
+					"description": "Whether to enable decoration in the overview ruler."
+				},
+				"todoHighlighter.include": {
+					"type": "array",
+					"default": [
+						"**/*.js",
+						"**/*.ts",
+						"**/*.jsx",
+						"**/*.tsx",
+						"**/*.html",
+						"**/*.vue",
+						"**/*.css",
+						"**/*.scss",
+						"**/*.sass",
+						"**/*.less",
+						"**/*.styl",
+						"**/*.py",
+						"**/*.php",
+						"**/*.md"
+					],
+					"description": "Files/Folders to include."
+				},
+				"todoHighlighter.exclude": {
+					"type": "array",
+					"default": [
+						"**/node_modules/**",
+						"**/bower_components/**",
+						"**/dist/**",
+						"**/out/**",
+						"**/build/**",
+						"**/.*/**"
+					],
+					"description": "Files/Folders to exclude."
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "todoHighlighter.refreshList",
+				"category": "BBL Todo Highlighter",
+				"title": "Refresh Todo List",
+				"icon": "$(refresh)"
+			},
+			{
+				"command": "todoHighlighter.openFile",
+				"category": "BBL Todo Highlighter",
+				"title": "Open File",
+				"icon": "$(file)"
+			}
+		],
+		"snippets": [
+			{
+				"path": "src/todo.code-snippets"
+			},
+			{
+				"path": "src/bbl-doc.code-snippets"
+			},
+			{
+				"path": "src/bbl-permission.code-snippets"
+			}
+		],
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "todoHighlighter",
+					"title": "BBL Todo Highlighter",
+					"icon": "src/media/icon.svg"
+				}
+			]
+		},
+		"views": {
+			"todoHighlighter": [
+				{
+					"id": "todo-list",
+					"name": "Todo List"
+				}
+			]
+		},
+		"menus": {
+			"view/title": [
+				{
+					"command": "todoHighlighter.refreshList",
+					"when": "view == todo-list",
+					"group": "navigation"
+				}
+			]
+		},
+		"viewsWelcome": [
+			{
+				"view": "todo-list",
+				"contents": "You have no todos yet."
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"precompile": "rm -rf out",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.3",
+		"@types/node": "^14.14.34",
+		"@types/vscode": "^1.52.0",
+		"@typescript-eslint/eslint-plugin": "^4.17.0",
+		"@typescript-eslint/parser": "^4.17.0",
+		"eslint": "^7.22.0",
+		"glob": "^7.1.6",
+		"typescript": "^4.2.3",
+		"vscode-test": "^1.5.1"
+	}
 }
